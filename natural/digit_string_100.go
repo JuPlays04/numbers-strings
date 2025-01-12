@@ -10,6 +10,37 @@ package natural
 // Dies ist eine Hilfsfunktion, die genutzt werden soll,
 // um den Gesamt-String einer Zahl zusammenzusetzen.
 func DigitString100(digit int) string {
-	// TODO
+	if digit == 0 {
+		return ""
+	}
+	if digit == 1 {
+		return "einhundert"
+	}
+	if digit == 2 {
+		return "zweihundert"
+	}
+	if digit == 3 {
+		return "dreihundert"
+	}
+	if digit == 4 {
+		return "vierhundert"
+	}
+	if digit == 5 {
+		return "fünfhundert"
+	}
+	if digit == 6 {
+		return "sechshundert"
+	}
+	if digit == 7 {
+		return "siebenhundert"
+	}
+	if digit == 8 {
+		return "achthundert"
+	}
+	if digit == 9 {
+		return "neunhundert"
+	}
+
 	return ""
+
 }
