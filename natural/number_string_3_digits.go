@@ -40,5 +40,54 @@ func NumberString3Digits(n int) string {
 			return "neun"
 		}
 
-	} if 9<x && x <20
-}
+	} else if 9<x && x <20
+	{
+		if einer == 0 && zehner == 1 && hunderter == 0 {
+			return "zehn"
+		}
+		if einer == 1 && zehner == 1 && hunderter == 0 {
+			return "elf"
+		}
+		if einer == 2 && zehner == 1 && hunderter == 0 {
+			return "zwölf"
+		}
+		if einer == 3 && zehner == 1 && hunderter == 0 {
+			return "dreizehn"
+		}
+		if einer == 4 && zehner == 1 && hunderter == 0 {
+			return "vierzehn"
+		}
+		if einer == 5 && zehner == 1 && hunderter == 0 {
+			return "fünfzehn"
+		}
+		if einer == 6 && zehner == 1 && hunderter == 0 {
+			return "sechzehn"
+		}
+		if einer == 7 && zehner == 1 && hunderter == 0 {
+			return "siebzehn"
+		}
+		if einer == 8 && zehner == 1 && hunderter == 0 {
+			return "achtzehn"
+		}
+		if einer == 9 && zehner == 1 && hunderter == 0 {
+			return "neunzehn"
+		}
+	} else if x < 100 {
+		if einer == 0 && zehner == 2 && hunderter == 0 {
+			return "zwanzig"
+		}
+		if einer == 1 && zehner == 2 && hunderter == 0 {
+			return "einundzwanzig"
+		}
+		if einer == 2 && zehner == 2 && hunderter == 0 {
+			return "zweiundzwanzig"
+		}
+		if einer == 3 && zehner == 2 && hunderter == 0 {
+			return "dreiundzwanzig"
+		}
+		if einer == 4 && zehner == 2 && hunderter == 0 {
+			return "vierundzwanzig"
+		}
+		if einer == 5 && zehner == 2 && hunderter == 0 {
+			return "fünfundzwanzig"
+		} 
