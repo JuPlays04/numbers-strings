@@ -1,67 +1,50 @@
 package natural
 
-// NumberStringBelow20 erwartet eine Zahl >= 20 und liefert den zugehörigen String.
+// NumberStringBelow20 erwartet eine Zahl < 20 und liefert den zugehörigen String.
 func NumberStringBelow20(n int) string {
-	x:=n
-	Einer := n %10
-	n= n/10
-	Zehner :n %10 
-	n= n/10
+	if n >= 20 {
+		return ""
+	}
+
+	Einer := n % 10
+	Zehner := n / 10
 
 	StEins := ""
-	if Einer == 1 {
+	switch Einer {
+	case 1:
 		StEins = "eins"
-	}
-StEins := ""
-	if Einer  == 2 {
+	case 2:
 		StEins = "zwei"
-	}
-StEins := ""
-	if Einer == 3 {
-		StEins= "drei"
-	}
-	StEins := ""
-	if Einer == 4 {
+	case 3:
+		StEins = "drei"
+	case 4:
 		StEins = "vier"
+	case 5:
+		StEins = "fünf"
+	case 6:
+		StEins = "sechs"
+	case 7:
+		StEins = "sieben"
+	case 8:
+		StEins = "acht"
+	case 9:
+		StEins = "neun"
 	}
-	StEins := ""
-	if Einer == 5 {
-		StEins "fünf"
-	}
-	StEins := ""
-	if Einer == 6 {
-		StEins "sechs"
-	}
-	StEins := ""
-	if Einer == 7 {
-		StEins "sieben"
-	}
-	StEins := ""
-	if Einer == 8 {
-		StEins "acht"
-	}
-	StEins := ""
-	if Einer == 9 {
-		StEins "neun"
-	}
-	if x == 11 {
+
+	switch n {
+	case 11:
 		return "elf"
-	}
-	if x == 12{
+	case 12:
 		return "zwölf"
-	}
-	if x == 16 {
+	case 16:
 		return "sechzehn"
-	}
-	if x == 17 {
+	case 17:
 		return "siebzehn"
 	}
-} {if Zehner == 1 {
 
-}
-	
-}
+	if Zehner == 1 {
+		return StEins
+	}
 
-if n < 12 {
-	return 
+	return StEins
 }
